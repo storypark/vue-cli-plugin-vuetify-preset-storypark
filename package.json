@@ -1,0 +1,14 @@
+{
+  "name": "vue-cli-plugin-vuetify-preset-storypark",
+  "version": "1.0.0",
+  "description": "Storyparks vuetify preset",
+  "license": "NA",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js,.vue ."
+  },
+  "dependencies": {
+    "@vuetify/cli-plugin-utils": "^0.0.7"
+  }
+}

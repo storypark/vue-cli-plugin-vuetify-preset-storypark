@@ -1,0 +1,7 @@
+@import './variables.scss';
+
+// Material design has overline defined as being all-caps this is cannot be overridden
+// within vuetify so we are overriding it here.
+.overline {
+  text-transform: none !important;
+}
