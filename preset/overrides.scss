@@ -1,5 +1,10 @@
 @import './variables.scss';
 
+.theme--light.v-application,
+.theme--light.v-card {
+  color: $default-font-color;
+}
+
 // Material design has overline defined as being all-caps this is cannot be overridden
 // within vuetify so we are overriding it here.
 .overline {
