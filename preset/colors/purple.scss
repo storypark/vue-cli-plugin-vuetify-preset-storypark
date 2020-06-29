@@ -1,0 +1,15 @@
+$purple: (
+  'base': #8484D1,
+  'lighten1': #9F9FE2,
+  'lighten2': #BEBEEA,
+  'lighten3': #DCDCF4,
+  'lighten4': #EAEAF9,
+  'darken1': #6161AA,
+  'darken2': #433D7C,
+);
+
+:export {
+  @each $key, $value in $purple {
+    purple-#{unquote($key)}: $value;
+  }
+}

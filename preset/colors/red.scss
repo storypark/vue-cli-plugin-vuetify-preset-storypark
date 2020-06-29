@@ -1,0 +1,15 @@
+$red: (
+  'base': #F8546E,
+  'lighten1': #FF8798,
+  'lighten2': #FFF099,
+  'lighten3': #FFC4CD,
+  'lighten4': #F9D6DF,
+  'darken1': #E63A5C,
+  'darken2': #D31C4B,
+);
+
+:export {
+  @each $key, $value in $red {
+    red-#{unquote($key)}: $value;
+  }
+}

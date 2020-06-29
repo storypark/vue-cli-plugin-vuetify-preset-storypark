@@ -1,0 +1,19 @@
+$grey: (
+  'base': #B7C2CB,
+  'lighten1': #D1D8DF,
+  'lighten2': #E1E6EB,
+  'lighten3': #EBEFF4,
+  'lighten4': #F1F5F9,
+  'lighten5': #F7F9FC,
+  'darken1': #9CA7B2,
+  'darken2': #808B98,
+  'darken3': #687381,
+  'darken4': #4E5A67,
+  'darken5': #384450
+);
+
+:export {
+  @each $key, $value in $grey {
+    grey-#{unquote($key)}: $value;
+  }
+}

@@ -1,0 +1,15 @@
+$teal: (
+  'base': #00B2D0,
+  'lighten1': #93D4E5,
+  'lighten2': #B8E4F2,
+  'lighten3': #D2F1FA,
+  'lighten4': #E8F9FF,
+  'darken1': #0084A5,
+  'darken2': #075476
+);
+
+:export {
+  @each $key, $value in $teal {
+    teal-#{unquote($key)}: $value;
+  }
+}
