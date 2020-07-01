@@ -1,0 +1,32 @@
+@import './green.scss';
+@import './grey.scss';
+@import './orange.scss';
+@import './purple.scss';
+@import './red.scss';
+@import './teal.scss';
+@import './text.scss';
+@import './yellow.scss';
+
+:export {
+  @each $key, $value in $green {
+    green-#{unquote($key)}: $value;
+  }
+  @each $key, $value in $grey {
+    grey-#{unquote($key)}: $value;
+  }
+  @each $key, $value in $orange {
+    orange-#{unquote($key)}: $value;
+  }
+  @each $key, $value in $purple {
+    purple-#{unquote($key)}: $value;
+  }
+  @each $key, $value in $red {
+    red-#{unquote($key)}: $value;
+  }
+  @each $key, $value in $teal {
+    teal-#{unquote($key)}: $value;
+  }
+  @each $key, $value in $yellow {
+    yellow-#{unquote($key)}: $value;
+  }
+}

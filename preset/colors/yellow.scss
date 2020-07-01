@@ -1,0 +1,15 @@
+$yellow: (
+  'base': #FFD55B,
+  'lighten1': #FFE579,
+  'lighten2': #FFF099,
+  'lighten3': #FFF5B8,
+  'lighten4': #FFFAD6,
+  'darken1': #EDB846,
+  'darken2': #D39C29,
+);
+
+:export {
+  @each $key, $value in $yellow {
+    yellow-#{unquote($key)}: $value;
+  }
+}

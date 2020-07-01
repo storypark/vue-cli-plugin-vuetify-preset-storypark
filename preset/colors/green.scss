@@ -1,0 +1,15 @@
+$green: (
+  'base': #7FC489,
+  'lighten1': #A2D992,
+  'lighten2': #BEBEEA,
+  'lighten3': #D0F4B6,
+  'lighten4': #DEF9CE,
+  'darken1': #3D8977,
+  'darken2': #0D5E58,
+);
+
+:export {
+  @each $key, $value in $green {
+    green-#{unquote($key)}: $value;
+  }
+}

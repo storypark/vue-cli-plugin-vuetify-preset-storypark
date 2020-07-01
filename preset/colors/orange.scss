@@ -1,0 +1,15 @@
+$orange: (
+  'base': #FFA042,
+  'lighten1': #FBB566,
+  'lighten2': #FDC57E,
+  'lighten3': #FED099,
+  'lighten4': #FEDDBA,
+  'darken1': #F78321,
+  'darken2': #E56526,
+);
+
+:export {
+  @each $key, $value in $orange {
+    orange-#{unquote($key)}: $value;
+  }
+}
