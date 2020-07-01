@@ -1,11 +1,14 @@
 import unprocessedColors from './index.scss';
 
-const parsedColors = Object.entries(unprocessedColors).reduce((obj, val) => {
-  if (val[0].match(/-/) && !val[0].match(/text-/)) {
-    let color = val[0].split("-")[0]
-    let key = val[0].split("-")[1]
+const parsedColors = Object.entries(unprocessedColors).reduce((obj, [key, value]) => {
+  if (key.match(/-/) && !key.match(/text-/)) {
+    let [color, subKey] = key.split("-")
     let colorObj = obj[color] || {}
-    return { ...obj, [color]: { ...colorObj, [key]: val[1] } }
+
+    return {
+      ...obj,
+      [color]: { ...colorObj, [subKey]: value }
+    }
   }
   return obj
 }, {})
