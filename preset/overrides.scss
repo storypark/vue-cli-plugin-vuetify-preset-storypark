@@ -1,14 +1,16 @@
 @import './variables.scss';
-.v-application .v-tab {
-  text-transform: none;
+.v-application {
+  .v-tab {
+    text-transform: none;
 
-  &--active {
-    font-weight: map-get($font-weights, 'bold');
-    color: $text-primary-color;
+    &--active {
+      font-weight: map-get($font-weights, 'bold');
+      color: $text-primary-color;
+    }
   }
-}
 
-// This color is currently set by $material-light: dividers but given we want a different shade of grey for skeletons to dividers we have overridden only skeletons
-.v-application .theme--light.v-skeleton-loader .v-skeleton-loader__avatar, .theme--light.v-skeleton-loader .v-skeleton-loader__button, .theme--light.v-skeleton-loader .v-skeleton-loader__chip, .theme--light.v-skeleton-loader .v-skeleton-loader__divider, .theme--light.v-skeleton-loader .v-skeleton-loader__heading, .theme--light.v-skeleton-loader .v-skeleton-loader__image, .theme--light.v-skeleton-loader .v-skeleton-loader__text {
-  background: map-get($grey, 'lighten3');
+  // This color is currently set by $material-light: dividers but given we want a different shade of grey for skeletons to dividers we have overridden only skeletons
+  .theme--light.v-skeleton-loader .v-skeleton-loader__avatar, .theme--light.v-skeleton-loader .v-skeleton-loader__button, .theme--light.v-skeleton-loader .v-skeleton-loader__chip, .theme--light.v-skeleton-loader .v-skeleton-loader__divider, .theme--light.v-skeleton-loader .v-skeleton-loader__heading, .theme--light.v-skeleton-loader .v-skeleton-loader__image, .theme--light.v-skeleton-loader .v-skeleton-loader__text {
+    background: map-get($grey, 'lighten3');
+  }
 }
