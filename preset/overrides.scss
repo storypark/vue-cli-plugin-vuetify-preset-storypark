@@ -1,15 +1,17 @@
 @import './variables.scss';
 
+// Have stuggled to consistently get the overrides scss to be loaded last consistently with treeshaking. See https://github.com/webpack/webpack/issues/7094 for more details. As a quick fix using !important for overridden fields for now.
+
 .v-tab {
-  text-transform: none;
+  text-transform: none !important;
 
   &--active {
-    font-weight: map-get($font-weights, 'bold');
-    color: $text-primary-color
+    font-weight: map-get($font-weights, 'bold') !important;
+    color: $text-primary-color !important;
   }
 }
 
 // This color is currently set by $material-light: dividers but given we want a different shade of grey for skeletons to dividers we have overridden only skeletons
 .theme--light.v-skeleton-loader .v-skeleton-loader__avatar, .theme--light.v-skeleton-loader .v-skeleton-loader__button, .theme--light.v-skeleton-loader .v-skeleton-loader__chip, .theme--light.v-skeleton-loader .v-skeleton-loader__divider, .theme--light.v-skeleton-loader .v-skeleton-loader__heading, .theme--light.v-skeleton-loader .v-skeleton-loader__image, .theme--light.v-skeleton-loader .v-skeleton-loader__text {
-  background: map-get($grey, 'lighten3')
+  background: map-get($grey, 'lighten3') !important;
 }
