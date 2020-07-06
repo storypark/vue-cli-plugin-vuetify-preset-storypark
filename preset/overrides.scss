@@ -51,10 +51,10 @@
       margin-left: 20px;
       height: 28px;
       width: 28px;
-      background: #00b2d0 !important; // base
+      background: map-get($teal, 'base');
 
       &::after {
-        background: #93D4E5 !important; // lighten-1
+        background: map-get($teal, 'lighten1') !important;
       }
 
     };
@@ -62,10 +62,10 @@
     .v-skeleton-loader__text {
       margin-left: 8px;
       margin-right: 16px;
-      background: #00b2d0 !important; // base
+      background: map-get($teal, 'base');
 
       &::after {
-        background: #93D4E5 !important; // lighten-1
+        background: map-get($teal, 'lighten1') !important;
       }
     };
   }
@@ -73,7 +73,7 @@
   .v-skeleton-loader__subnav {
     padding-top: 12px;
     padding-bottom: 12px;
-    background: #075476; // darken-2
+    background: map-get($teal, 'darken2');
     border-radius: 0px;
   }
 
@@ -82,16 +82,16 @@
     align-items: center;
     padding-top: 12px;
     padding-bottom: 12px;
-    background: #075476; // darken-2
+    background: map-get($teal, 'darken2');
     border-radius: 0px;
 
     .v-skeleton-loader__text {
       margin-left: 26px;
       margin-right: 26px;
-      background: #00b2d0 !important; // base
+      background: map-get($teal, 'base');
 
       &::after {
-        background: #0084A5 !important; // darken-1
+        background: map-get($teal, 'darken1') !important;
       }
     };
   }
@@ -101,16 +101,16 @@
     align-items: center;
     padding-top: 12px;
     padding-bottom: 12px;
-    background: #075476; // darken-2
+    background: map-get($teal, 'darken2');
     border-radius: 0px;
 
     .v-skeleton-loader__text {
       margin-left: 26px;
       margin-right: 26px;
-      background: #00b2d0 !important; // base
+      background: map-get($teal, 'base');
 
       &::after {
-        background: #0084A5 !important; // darken-1
+        background: map-get($teal, 'darken1') !important;
       }
     }
   }
