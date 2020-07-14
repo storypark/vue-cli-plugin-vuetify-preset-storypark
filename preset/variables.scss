@@ -137,13 +137,23 @@ $tab-font-size: map-get($body-1, 'size');
 $tab-font-weight: map-get($body-1, 'weight');
 $tabs-item-letter-spacing: normal;
 
+// v-list
+$list-dense-min-height: 24px;
+$list-dense-subheader-height: 24px;
+$list-dense-content-padding: 4px;
+$list-dense-icon-height: 18px;
+$list-dense-icon-margin: 4px;
+$list-dense-subheader-padding: 0 4px;
+$list-dense-subheading-padding: 0 4px;
+
+$list-item-min-height: 32px;
+
 $material-light: (
   'buttons': (
     'disabled': map-get($grey, 'darken1'),
     'focused': map-get($grey, 'lighten2')
   ),
   'dividers': map-get($grey, 'base'),
-  'skeleton': map-get($grey, 'lighten2'),
   'text': (
     'primary': $text-primary-color
   ),
