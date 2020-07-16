@@ -131,6 +131,9 @@ $btn-text-transform: none;
 // v-dialog
 $dialog-border-radius: 8px;
 
+// v-text-field
+$text-field-outlined-fieldset-border: 2px solid map-get($grey, 'lighten1');
+
 // v-tab
 $body-1: map-get($headings, 'body-1');
 $tab-font-size: map-get($body-1, 'size');
