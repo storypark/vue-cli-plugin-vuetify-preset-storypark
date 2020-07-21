@@ -125,11 +125,18 @@ $font-weights: (
 
 // Component specific
 
+// v-badge
+$badge-letter-spacing: normal;
+
 // v-button
 $btn-text-transform: none;
+$btn-letter-spacing: normal;
 
 // v-dialog
 $dialog-border-radius: 8px;
+
+// v-input
+$input-label-letter-spacing: normal;
 
 // v-text-field
 $text-field-outlined-fieldset-border: 2px solid map-get($grey, 'lighten1');
