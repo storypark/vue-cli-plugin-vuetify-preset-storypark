@@ -39,6 +39,10 @@
     }
   }
 
+  .v-expansion-panel, .v-expansion-panel--readonly .v-expansion-panel-header .v-expansion-panel-header__icon .v-icon {
+    color: map-get($grey, 'lighten1');
+  }
+
   .v-skeleton-loader__sidenav, .v-skeleton-loader__menu-item, .v-skeleton-loader__subnav, .v-skeleton-loader__subnav-item, .v-skeleton-loader__action-items {
     &::after {
       display: none;
