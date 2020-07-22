@@ -1,5 +1,12 @@
 @import './variables.scss';
 
+@media (max-width: 588px) {
+  .v-expansion-panel-header__icon {
+    position: relative;
+    top: 8px;
+  }
+}
+
 .v-application--is-ltr {
   .v-list-group--sub-group {
     .v-list-group__header {
