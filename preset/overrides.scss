@@ -1,5 +1,9 @@
 @import './variables.scss';
 
+.with-grey-active-border .v-item--active {
+  border-left: 4px solid map-get($grey, "lighten1");
+}
+
 @media (max-width: 588px) {
   .v-expansion-panel-header__icon {
     position: relative;
