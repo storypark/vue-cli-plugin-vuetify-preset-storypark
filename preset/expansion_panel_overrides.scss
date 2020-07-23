@@ -1,0 +1,68 @@
+.v-expansion-panel-header__events-separator {
+  border-top: 1px solid map-get($grey, "lighten2");
+  bottom: -10px;
+  height: 1px;
+  left: 48px;
+  position: absolute;
+  width: 100%;
+}
+
+.v-expansion-panel-header__events-separator .inner {
+  border-top: 1px solid map-get($grey, "lighten2");
+  bottom: 0;
+  height: 1px;
+  left: 44px;
+  position: absolute;
+  width: 100%;
+}
+
+.v-expansion-panel-content__timeline {
+  border-left: 1px solid map-get($grey, "lighten2");
+  display: none;
+  height: 100%;
+  left: 291px;
+  position: absolute;
+  top: 33px;
+  width: 1px;
+}
+
+.v-expansion-panel-content__timeline .inner {
+  background: #fff;
+  bottom: 34px;
+  height: 33px;
+  position: absolute;
+  right: -4px;
+  width: 10px;
+}
+
+.v-expansion-panel--active .v-expansion-panel-content__timeline {
+  display: block;
+}
+
+@media (max-width: 1251px) {
+  .v-expansion-panel-content__timeline {
+    left: 191px;
+  }
+}
+
+@media (max-width: 599px) {
+  .v-expansion-panel-content__timeline {
+    left: 41px;
+    top: 87px;
+  }
+
+  .v-expansion-panel-content__timeline .inner {
+    bottom: 88px;
+  }
+}
+
+.v-expansion-panel--grey-bordered .v-item--active {
+  border-left: 4px solid map-get($grey, "lighten1");
+}
+
+@media (max-width: 588px) {
+  .v-expansion-panel-header__icon {
+    position: relative;
+    top: 8px;
+  }
+}
