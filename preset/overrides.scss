@@ -1,6 +1,6 @@
 @import './variables.scss';
 
-.with-grey-active-border .v-item--active {
+.v-expansion-panel--grey-bordered .v-item--active {
   border-left: 4px solid map-get($grey, "lighten1");
 }
 
