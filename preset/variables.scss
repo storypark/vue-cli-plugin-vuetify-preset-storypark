@@ -139,7 +139,7 @@ $dialog-border-radius: 8px;
 $input-label-letter-spacing: normal;
 
 // v-text-field
-$text-field-outlined-fieldset-border: 2px solid map-get($grey, 'lighten1');
+$text-field-outlined-fieldset-border-width: 2px;
 
 // v-tab
 $body-1: map-get($headings, 'body-1');
@@ -166,5 +166,13 @@ $material-light: (
   'dividers': map-get($grey, 'base'),
   'text': (
     'primary': $text-primary-color
+  ),
+  'selection-controls': (
+    'disabled': map-get($grey, 'lighten2'),
+  ),
+  'text-fields': (
+    'outlined': map-get($grey, 'lighten1'),
+    'outlined-disabled': map-get($grey, 'lighten2'),
+    'outlined-hover': map-get($grey, 'base'),
   ),
 );
