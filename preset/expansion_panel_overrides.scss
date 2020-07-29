@@ -39,6 +39,10 @@
   display: block;
 }
 
+.v-expansion-panel--readonly > .v-expansion-panel-header > .v-expansion-panel-header__icon > .v-icon {
+  color: map-get($grey, 'lighten1') !important;
+}
+
 @media (max-width: 1251px) {
   .v-expansion-panel-content__timeline {
     left: 191px;

@@ -19,7 +19,7 @@ const preset = {
     },
   },
   icons: {
-    iconfont: 'fa',
+    iconfont: 'fa4',
   },
 }
 
