@@ -1,0 +1,84 @@
+.v-application {
+  // This color is currently set by $material-light: dividers but given we want a different shade of grey for skeletons to dividers we have overridden only skeletons
+  .theme--light.v-skeleton-loader .v-skeleton-loader__avatar, .theme--light.v-skeleton-loader .v-skeleton-loader__button, .theme--light.v-skeleton-loader .v-skeleton-loader__chip, .theme--light.v-skeleton-loader .v-skeleton-loader__divider, .theme--light.v-skeleton-loader .v-skeleton-loader__heading, .theme--light.v-skeleton-loader .v-skeleton-loader__image, .theme--light.v-skeleton-loader .v-skeleton-loader__text {
+    background: map-get($grey, "lighten3");
+  }
+
+  .v-skeleton-loader__sidenav, .v-skeleton-loader__menu-item, .v-skeleton-loader__subnav, .v-skeleton-loader__subnav-item, .v-skeleton-loader__action-items {
+    &::after {
+      display: none;
+    }
+  }
+  .v-skeleton-loader__menu-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+
+    .v-skeleton-loader__avatar {
+      margin-left: 20px;
+      height: 28px;
+      width: 28px;
+      background: map-get($teal, "base");
+
+      &::after {
+        background: map-get($teal, "lighten1") !important;
+      }
+
+    };
+
+    .v-skeleton-loader__text {
+      margin-left: 8px;
+      margin-right: 16px;
+      background: map-get($teal, "base");
+
+      &::after {
+        background: map-get($teal, "lighten1") !important;
+      }
+    };
+  }
+
+  .v-skeleton-loader__subnav {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: map-get($teal, "darken2");
+    border-radius: 0px;
+  }
+
+  .v-skeleton-loader__subnav-item {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: map-get($teal, "darken2");
+    border-radius: 0px;
+
+    .v-skeleton-loader__text {
+      margin-left: 26px;
+      margin-right: 26px;
+      background: map-get($teal, "base");
+
+      &::after {
+        background: map-get($teal, "darken1") !important;
+      }
+    };
+  }
+
+  .v-skeleton-loader__action-items {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: map-get($teal, "darken2");
+    border-radius: 0px;
+
+    .v-skeleton-loader__text {
+      margin-left: 26px;
+      margin-right: 26px;
+      background: map-get($teal, "base");
+
+      &::after {
+        background: map-get($teal, "darken1") !important;
+      }
+    }
+  }
+}

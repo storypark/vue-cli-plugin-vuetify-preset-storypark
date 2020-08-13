@@ -1,4 +1,6 @@
-@import './variables.scss';
+@import "./variables.scss";
+@import "./expansion_panel_overrides.scss";
+@import "./skeleton_overrides.scss";
 
 .v-application--is-ltr {
   .v-list-group--sub-group {
@@ -22,85 +24,17 @@
   }
 }
 
+.v-list-item {
+  min-height: 36px;
+}
+
 .v-application {
   .v-tab {
     text-transform: none;
 
     &--active {
-      font-weight: map-get($font-weights, 'bold');
+      font-weight: map-get($font-weights, "bold");
       color: $text-primary-color;
-    }
-  }
-
-  // This color is currently set by $material-light: dividers but given we want a different shade of grey for skeletons to dividers we have overridden only skeletons
-  .theme--light.v-skeleton-loader {
-    .v-skeleton-loader__avatar, .v-skeleton-loader__button, .v-skeleton-loader__chip, .v-skeleton-loader__divider, .v-skeleton-loader__heading, .v-skeleton-loader__image, .v-skeleton-loader__text {
-      background: map-get($grey, 'lighten2');
-    }
-  }
-
-  .v-expansion-panel--readonly > .v-expansion-panel-header > .v-expansion-panel-header__icon > .v-icon {
-    color: map-get($grey, 'lighten1') !important;
-  }
-
-  .v-skeleton-loader__sidenav, .v-skeleton-loader__menu-item, .v-skeleton-loader__subnav, .v-skeleton-loader__subnav-item, .v-skeleton-loader__action-items {
-    &::after {
-      display: none;
-    }
-  }
-  .v-skeleton-loader__menu-item {
-    display: flex;
-    align-items: center;
-    padding-bottom: 16px;
-
-    .v-skeleton-loader__avatar {
-      margin-left: 16px;
-      height: 28px;
-      width: 28px;
-      background: map-get($teal, 'base') !important;
-    };
-
-    .v-skeleton-loader__text {
-      margin-left: 8px;
-      margin-right: 16px;
-      background: map-get($teal, 'base') !important;
-    };
-  }
-
-  .v-skeleton-loader__subnav {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    background: map-get($teal, 'darken2') !important;
-    border-radius: 0px;
-  }
-
-  .v-skeleton-loader__subnav-item {
-    display: flex;
-    align-items: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    background: map-get($teal, 'darken2') !important;
-    border-radius: 0px;
-
-    .v-skeleton-loader__text {
-      margin-left: 26px;
-      margin-right: 26px;
-      background: map-get($teal, 'base') !important;
-    };
-  }
-
-  .v-skeleton-loader__action-items {
-    display: flex;
-    align-items: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    background: map-get($teal, 'darken2') !important;
-    border-radius: 0px;
-
-    .v-skeleton-loader__text {
-      margin-left: 26px;
-      margin-right: 26px;
-      background: map-get($teal, 'base') !important;
     }
   }
 }
