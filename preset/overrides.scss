@@ -1,12 +1,13 @@
-@import "./variables.scss";
-@import "./expansion_panel_overrides.scss";
-@import "./skeleton_overrides.scss";
+@import "./variables";
+@import "./expansion_panel_overrides";
+@import "./skeleton_overrides";
 
 .v-application--is-ltr {
   .v-list-group--sub-group {
     .v-list-group__header {
       padding-left: 16px;
     }
+
     .v-list-group__items .v-list-item {
       padding-left: 16px;
     }
@@ -18,6 +19,7 @@
     .v-list-group__header {
       padding-right: 16px;
     }
+
     .v-list-group__items .v-list-item {
       padding-right: 16px;
     }
@@ -33,8 +35,8 @@
     text-transform: none;
 
     &--active {
-      font-weight: map-get($font-weights, "bold");
-      color: $text-primary-color;
+      color: $textPrimaryColor;
+      font-weight: map-get($fontWeights, "bold");
     }
   }
 }

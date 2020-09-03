@@ -118,7 +118,7 @@ $headings: (
   )
 );
 
-$font-weights: (
+$fontWeights: (
   'regular': 400,
   'bold': 600,
 );
@@ -162,7 +162,7 @@ $material-light: (
   ),
   'dividers': map-get($grey, 'base'),
   'text': (
-    'primary': $text-primary-color
+    'primary': $textPrimaryColor
   ),
   'selection-controls': (
     'disabled': map-get($grey, 'lighten2'),
