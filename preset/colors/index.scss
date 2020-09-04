@@ -1,11 +1,11 @@
-@import './green.scss';
-@import './grey.scss';
-@import './orange.scss';
-@import './purple.scss';
-@import './red.scss';
-@import './teal.scss';
-@import './text.scss';
-@import './yellow.scss';
+@import "./green";
+@import "./grey";
+@import "./orange";
+@import "./purple";
+@import "./red";
+@import "./teal";
+@import "./text";
+@import "./yellow";
 
 :export {
   @each $key, $value in $green {
