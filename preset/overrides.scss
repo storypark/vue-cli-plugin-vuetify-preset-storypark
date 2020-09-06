@@ -36,8 +36,8 @@
     text-transform: none;
 
     &--active {
-      color: $textPrimaryColor;
-      font-weight: map-get($fontWeights, "bold");
+      color: $text-primary-color;
+      font-weight: map-get($font-weights, "bold");
     }
   }
 }
