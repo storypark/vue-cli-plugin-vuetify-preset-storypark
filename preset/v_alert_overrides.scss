@@ -1,0 +1,35 @@
+.v-application {
+  .v-alert {
+    &--outlined {
+      border: 1px solid !important;
+    }
+
+    &.success,
+    &.success--text {
+      background-color: map-get($green, "lighten4") !important;
+      border-color: map-get($green, "lighten2") !important;
+      color: map-get($green, "darken1") !important;
+    }
+
+    &.info,
+    &.info--text {
+      background-color: map-get($teal, "lighten3") !important;
+      border-color: map-get($teal, "lighten2") !important;
+      color: map-get($teal, "darken1") !important;
+    }
+
+    &.warning,
+    &.warning--text {
+      background-color: map-get($yellow, "lighten4") !important;
+      border-color: map-get($yellow, "lighten1") !important;
+      color: map-get($yellow, "darken1") !important;
+    }
+
+    &.error,
+    &.error--text {
+      background-color: map-get($red, "lighten4") !important;
+      border-color: map-get($red, "lighten3") !important;
+      color: map-get($red, "darken1") !important;
+    }
+  }
+}
