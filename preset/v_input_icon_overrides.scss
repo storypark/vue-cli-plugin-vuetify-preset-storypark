@@ -1,0 +1,5 @@
+.v-application {
+  .v-input__icon--clear > .v-icon--link {
+    color: map-get($grey, "darken1") !important;
+  }
+}
