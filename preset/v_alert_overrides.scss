@@ -5,30 +5,35 @@
     }
 
     &.success,
-    &.success--text {
+    &.success--text,
+    &.green--text {
       background-color: map-get($green, "lighten4") !important;
       border-color: map-get($green, "lighten2") !important;
       color: map-get($green, "darken1") !important;
     }
 
     &.info,
-    &.info--text {
+    &.info--text,
+    &.primary--text,
+    &.teal--text {
       background-color: map-get($teal, "lighten3") !important;
-      border-color: map-get($teal, "lighten2") !important;
+      border-color: map-get($teal, "lighten1") !important;
       color: map-get($teal, "darken1") !important;
     }
 
     &.warning,
-    &.warning--text {
+    &.warning--text,
+    &.yellow--text {
       background-color: map-get($yellow, "lighten4") !important;
       border-color: map-get($yellow, "lighten1") !important;
-      color: map-get($yellow, "darken1") !important;
+      color: map-get($yellow, "darken2") !important;
     }
 
     &.error,
-    &.error--text {
+    &.error--text,
+    &.red--text {
       background-color: map-get($red, "lighten4") !important;
-      border-color: map-get($red, "lighten3") !important;
+      border-color: map-get($red, "lighten2") !important;
       color: map-get($red, "darken1") !important;
     }
   }
