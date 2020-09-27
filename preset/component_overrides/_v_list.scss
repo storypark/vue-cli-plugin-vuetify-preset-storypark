@@ -1,0 +1,27 @@
+.v-application--is-ltr {
+  .v-list-group--sub-group {
+    .v-list-group__header {
+      padding-left: 16px;
+    }
+
+    .v-list-group__items .v-list-item {
+      padding-left: 16px;
+    }
+  }
+}
+
+.v-application--is-rtl {
+  .v-list-group--sub-group {
+    .v-list-group__header {
+      padding-right: 16px;
+    }
+
+    .v-list-group__items .v-list-item {
+      padding-right: 16px;
+    }
+  }
+}
+
+.v-list-item {
+  min-height: 36px;
+}

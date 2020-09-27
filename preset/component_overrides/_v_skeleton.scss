@@ -74,7 +74,7 @@
     .v-skeleton-loader__text {
       margin-left: 26px;
       margin-right: 26px;
-      background: map-get($teal, "base");
+      background: map-get($teal, "base") !important;
 
       &::after {
         background: map-get($teal, "darken1") !important;
