@@ -132,6 +132,21 @@ $badge-letter-spacing: normal;
 $btn-text-transform: none;
 $btn-letter-spacing: normal;
 $btn-hover-opacity: 0.2;
+$btn-font-weight: map-get($font-weights, "bold");
+$btn-font-sizes: (
+  'x-small': .75rem,
+  'small': .875rem,
+  'default': 1rem,
+  'large': 1.125rem,
+  'x-large': 1.3125rem
+);
+$btn-sizes: (
+  'x-small': 20,
+  'small': 28,
+  'default': 40,
+  'large': 44,
+  'x-large': 52
+);
 
 // v-dialog
 $dialog-border-radius: 8px;
