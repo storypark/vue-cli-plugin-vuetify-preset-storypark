@@ -1,50 +1,8 @@
 @import "./variables";
-@import "./expansion_panel_overrides";
-@import "./skeleton_overrides";
-@import "./v_alert_overrides";
-@import "./v_input_icon_overrides";
-
-.v-application--is-ltr {
-  .v-list-group--sub-group {
-    .v-list-group__header {
-      padding-left: 16px;
-    }
-
-    .v-list-group__items .v-list-item {
-      padding-left: 16px;
-    }
-  }
-}
-
-.v-application--is-rtl {
-  .v-list-group--sub-group {
-    .v-list-group__header {
-      padding-right: 16px;
-    }
-
-    .v-list-group__items .v-list-item {
-      padding-right: 16px;
-    }
-  }
-}
-
-.v-list-item {
-  min-height: 36px;
-}
-
-.v-application {
-  .v-tab {
-    text-transform: none;
-
-    &--active {
-      color: $text-primary-color;
-      font-weight: map-get($font-weights, "bold");
-    }
-  }
-}
-
-.white-space {
-  &-pre {
-    white-space: pre;
-  }
-}
+@import "./helper_classes";
+@import "./component_overrides/v_alert";
+@import "./component_overrides/v_expansion_panel";
+@import "./component_overrides/v_input";
+@import "./component_overrides/v_list";
+@import "./component_overrides/v_skeleton";
+@import "./component_overrides/v_tab";
