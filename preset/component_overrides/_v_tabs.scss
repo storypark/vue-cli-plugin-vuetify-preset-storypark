@@ -40,4 +40,11 @@
       }
     }
   }
+
+  .v-tab {
+    &:before {
+      border-top-right-radius: $border-radius-root;
+      border-top-left-radius: $border-radius-root;
+    }
+  }
 }
