@@ -17,3 +17,9 @@ $degrees: (
     transform: rotate($value);
   }
 }
+
+@each $size, $value in $line-heights {
+  .line-height--#{$size} {
+    line-height: $value !important;
+  }
+}
