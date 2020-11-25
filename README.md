@@ -34,15 +34,26 @@ To be able to work on presets on your local machine.
 
     - The `yarn.lock` file will also be updated.
 
-      **DO NOT commit this changed files.**
+      **DO NOT commit these changed files.**
 
 5. Make the changes you need to in both the `vue-cli-plugin-vuetify-preset-storypark` code and the `storyjar/education` code.
+    - everytime you make a change you will need to run `yarn add ...` again and restart your server.
+
     - commit changes
     - BUT not the changes to the `package.json` or `yarn.lock` in the `storyjar` repo
 
-6. Get the changes for the preset reviewed and merged first
+    *Note*: for quicker development you could:
+      - go to `storyjar/education/node_modules/vue-cli-plugin-vuetify-preset-storypark` and make the changes to the preset in there
+      - this will mean that you only need to reset the server and can miss the first step of running `yarn add` again
+      - if you do this, DO NOT commit the changes in the `storyjar` repo, make sure you move them to the `vue-cli-plugin-vuetify-preset-storypark`
+
+
+6. Get the changes for the preset agreed upon, reviewed and merged first.
+
+7. Once the preset change is merged, run `yarn add https://github.com/storypark/vue-cli-plugin-vuetify-preset-storypark` in the `storyjar/education` repo.
+
+    This will update the `yarn.lock` file in `education`, which you should then commit to your pull request.
+
+    Once the pull request is on staging you should see the preset changes on there.
 
 <br>
-
-*To add:*
-- next steps for getting the preset changes used in `storyjar`
