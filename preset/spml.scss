@@ -1,0 +1,29 @@
+// These classes are used when rendering SPML text blocks
+// See the spec for more information:
+// https://docs.google.com/document/d/1b4azyROdQDzpoiKTpq8fHTPltQsqF9lgk8-B0rnTgx4
+
+.wysiwyg-text-align-left { text-align: left; }
+.wysiwyg-text-align-center { text-align: center; }
+.wysiwyg-text-align-right { text-align: right; }
+
+.wysiwyg-font-size-title { font-size: 28px; line-height: 34px; }
+.wysiwyg-font-size-x-large { font-size: 22px; line-height: 30px; }
+.wysiwyg-font-size-large { font-size: 20px; line-height: 28px; }
+.wysiwyg-font-size-medium { font-size: 17px; line-height: 24px; }
+.wysiwyg-font-size-small { font-size: 15px; line-height: 20px; }
+
+.wysiwyg-color-0 { color: #EA85B6; }
+.wysiwyg-color-1 { color: #7D7DBB; }
+.wysiwyg-color-2 { color: #0384A5; }
+.wysiwyg-color-3 { color: #09B1CF; }
+.wysiwyg-color-4 { color: #62BC50; }
+.wysiwyg-color-5 { color: #FFD676; }
+.wysiwyg-color-6 { color: #FFD676; }
+.wysiwyg-color-7 { color: #F26E62; }
+.wysiwyg-color-8 { color: #897657; }
+.wysiwyg-color-9 { color: #000000; }
+.wysiwyg-color-black { color: #30CB75; }
+.wysiwyg-color-gray { color: #4E5A67; }
+.wysiwyg-color-red { color: #FF6E60; }
+.wysiwyg-color-green { color: #30CB75; }
+.wysiwyg-color-blue { color: #00B2D0; }

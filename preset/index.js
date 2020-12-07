@@ -1,6 +1,7 @@
 // preset/index.js
 
-require('./overrides.scss')
+require('./overrides.scss');
+require('./spml.scss');
 
 const storyparkColors = require('./colors/index').default;
 const textColors = require('./colors/text.scss');
