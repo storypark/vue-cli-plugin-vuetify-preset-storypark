@@ -2,12 +2,12 @@
   input {
     // The vuetify v-select seems to max its width because of a hidden input.
     // See here: https://github.com/vuetifyjs/vuetify/issues/6275
-    width: 0px;
+    width: 0px !important;
   }
 }
 
 .small-caret {
   .fa-caret-down {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
