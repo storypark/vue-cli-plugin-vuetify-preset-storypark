@@ -2,7 +2,13 @@
   input {
     // The vuetify v-select seems to max its width because of a hidden input.
     // See here: https://github.com/vuetifyjs/vuetify/issues/6275
-    width: 0px !important;
+    display: none;
+  }
+  .v-select__slot {
+    width: auto;
+  }
+  .v-select__selection {
+    max-width: none;
   }
 }
 
