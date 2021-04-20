@@ -6,11 +6,19 @@
 .wysiwyg-text-align-center { text-align: center; }
 .wysiwyg-text-align-right { text-align: right; }
 
-.wysiwyg-font-size-title { font-size: 28px; line-height: 34px; }
-.wysiwyg-font-size-x-large { font-size: 22px; line-height: 30px; }
-.wysiwyg-font-size-large { font-size: 20px; line-height: 28px; }
-.wysiwyg-font-size-medium { font-size: 17px; line-height: 24px; }
-.wysiwyg-font-size-small { font-size: 15px; line-height: 20px; }
+.wysiwyg-font-size-title { font-size: 48px; line-height: 56px; }
+.wysiwyg-font-size-x-large { font-size: 32px; line-height: 48px; }
+.wysiwyg-font-size-large { font-size: 24px; line-height: 32px; }
+.wysiwyg-font-size-medium { font-size: 20px; line-height: 32px; }
+.wysiwyg-font-size-small { font-size: 16px; line-height: 24px; }
+
+@media (max-width: 600px) {
+  .wysiwyg-font-size-title { font-size: 32px; line-height: 40px; }
+  .wysiwyg-font-size-x-large { font-size: 24px; line-height: 32px; }
+  .wysiwyg-font-size-large { font-size: 20px; line-height: 32px; }
+  .wysiwyg-font-size-medium { font-size: 16px; line-height: 24px; }
+  .wysiwyg-font-size-small { font-size: 14px; line-height: 24px; }
+}
 
 .wysiwyg-color-0 { color: #EA85B6; }
 .wysiwyg-color-1 { color: #7D7DBB; }
