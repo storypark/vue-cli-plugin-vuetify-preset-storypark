@@ -12,7 +12,7 @@
 .wysiwyg-font-size-medium { font-size: 20px; line-height: 32px; }
 .wysiwyg-font-size-small { font-size: 16px; line-height: 24px; }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .wysiwyg-font-size-title { font-size: 32px; line-height: 40px; }
   .wysiwyg-font-size-x-large { font-size: 24px; line-height: 32px; }
   .wysiwyg-font-size-large { font-size: 20px; line-height: 32px; }
