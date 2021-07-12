@@ -2,4 +2,12 @@
   .v-input__icon--clear > .v-icon--link {
     color: map-get($grey, "darken1") !important;
   }
+
+  .v-text-field .v-label {
+    color: map-get($grey, "base");
+  }
+
+  .theme--light.v-text-field .v-input__control > .v-input__slot:before {
+    border-color: map-get($grey, "base")!important;
+  }
 }
