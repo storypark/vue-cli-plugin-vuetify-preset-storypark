@@ -152,6 +152,7 @@ $body-1: map-get($headings, 'body-1');
 $tab-font-size: map-get($body-1, 'size');
 $tab-font-weight: map-get($body-1, 'weight');
 $tabs-item-letter-spacing: normal;
+$tabs-item-min-width: unset;
 
 // v-list
 $list-dense-min-height: 24px;
