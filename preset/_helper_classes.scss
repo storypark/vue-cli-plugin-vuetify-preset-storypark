@@ -13,6 +13,10 @@
   }
 }
 
+.cursor--pointer {
+  cursor: pointer !important;
+}
+
 $degrees: (
   '90': 90deg,
 );
@@ -26,5 +30,37 @@ $degrees: (
 @each $size, $value in $line-heights {
   .line-height--#{$size} {
     line-height: $value !important;
+  }
+}
+
+@each $key, $value in $grey {
+  // border-color-grey--lighten1
+  .border-color-grey--#{$key} {
+    border-color: $value !important;
+  }
+}
+
+.border {
+  &- {
+    &style {
+      &-- {
+        // border-style--dashed
+        &dashed { border-style: dashed !important; }
+      }
+    }
+
+    &width {
+      &-- {
+        // border-width--med
+        &med { border-width: 2px !important; }
+      }
+    }
+  }
+}
+
+@each $key, $value in $grey {
+  // background-color-grey--lighten1
+  .background-color-grey--#{$key} {
+    background-color: $value !important;
   }
 }
