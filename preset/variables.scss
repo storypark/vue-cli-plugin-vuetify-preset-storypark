@@ -153,6 +153,11 @@ $input-label-letter-spacing: normal;
 // textarea
 $textarea-line-height: 1.5;
 
+
+// v-data-table
+$body-2: map-get($headings, 'body-2');
+$data-table-regular-row-font-size: map-get($body-2, 'size');
+
 // v-tab
 $body-1: map-get($headings, 'body-1');
 $tab-font-size: map-get($body-1, 'size');
