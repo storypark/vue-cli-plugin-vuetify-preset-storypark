@@ -35,14 +35,15 @@ $degrees: (
 
 @each $key, $value in $grey {
   // border-color-grey--lighten1
-  .border-color-grey--#{$key} {
+  body .v-application .border-color-grey--#{$key} {
     border-color: $value !important;
   }
 }
 
 @each $key, $value in $yellow {
   // border-color-yellow--lighten1
-  .border-color-yellow--#{$key} {
+  body .v-application .border-color-yellow--#{$key},
+  body .v-application .v-alert.warning.border-color-yellow--#{$key} {
     border-color: $value !important;
   }
 }
@@ -71,7 +72,15 @@ $degrees: (
 
 @each $key, $value in $grey {
   // background-color-grey--lighten1
-  .background-color-grey--#{$key} {
+  body .v-application .background-color-grey--#{$key} {
+    background-color: $value !important;
+  }
+}
+
+@each $key, $value in $yellow {
+  // background-color-yellow--lighten1
+  body .v-application .background-color-yellow--#{$key},
+  body .v-application .v-alert.warning.background-color-yellow--#{$key} {
     background-color: $value !important;
   }
 }
