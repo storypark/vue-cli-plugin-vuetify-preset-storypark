@@ -40,10 +40,19 @@ $degrees: (
   }
 }
 
+@each $key, $value in $yellow {
+  // border-color-yellow--lighten1
+  .border-color-yellow--#{$key} {
+    border-color: $value !important;
+  }
+}
+
 .border {
   &- {
     &style {
       &-- {
+        // border-style--solid
+        &solid { border-style: solid !important; }
         // border-style--dashed
         &dashed { border-style: dashed !important; }
       }
@@ -51,6 +60,8 @@ $degrees: (
 
     &width {
       &-- {
+        // border-width--sm
+        &sm { border-width: 1px !important; }
         // border-width--med
         &med { border-width: 2px !important; }
       }
