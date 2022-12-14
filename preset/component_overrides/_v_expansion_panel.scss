@@ -56,9 +56,15 @@
   color: map-get($grey, 'lighten1') !important;
 }
 
-.v-expansion-panel--grey-bordered .v-item--active {
-  border-left: 4px solid map-get($grey, "lighten1");
+.v-expansion-panel--grey-bordered {
+  .v-expansion-panel {
+    padding-left: 4px;
+
+    &.v-item--active { border-left: 4px solid map-get($grey, "lighten1"); padding-left: 0; }
+  }
 }
+
+.v-expansion-panel.v-expansion-panel--no-transition { transition: none !important; }
 
 .v-expansion-panel-header__icon--xsonly .v-expansion-panel-header__icon {
   position: relative;
