@@ -13,8 +13,11 @@
   }
 }
 
-.cursor--pointer {
-  cursor: pointer !important;
+.cursor--pointer { cursor: pointer !important; }
+
+.user-select {
+  // user-select--none
+  &--none { user-select: none; }
 }
 
 $degrees: (
