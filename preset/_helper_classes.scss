@@ -20,6 +20,18 @@
   &--none { user-select: none; }
 }
 
+.width {
+  // width--100
+  &--100 { width: 100%; }
+}
+
+.v-application .font-family {
+  // font-family--body
+  &--body { font-family: $body-font-family !important; }
+  // font-family--heading
+  &--heading { font-family: $heading-font-family !important; }
+}
+
 $degrees: (
   '90': 90deg,
 );
@@ -27,6 +39,12 @@ $degrees: (
 @each $key, $value in $degrees {
   .rotate-#{$key} {
     transform: rotate($value);
+  }
+}
+
+@each $size, $value in $font-sizes {
+  .v-application .font-size--#{$size} {
+    font-size: $value !important;
   }
 }
 
@@ -85,5 +103,19 @@ $degrees: (
   body .v-application .background-color-yellow--#{$key},
   body .v-application .v-alert.warning.background-color-yellow--#{$key} {
     background-color: $value !important;
+  }
+}
+
+@each $key, $value in $teal {
+  // background-hover-color-teal--lighten1
+  .background-hover-color-teal--#{$key}:hover {
+    background-color: $value !important;
+  }
+}
+
+@each $key, $value in $teal {
+  // text-hover-color-teal--lighten1
+  .v-application .text-hover-color-teal--#{$key}:hover {
+    color: $value !important;
   }
 }
