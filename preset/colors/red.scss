@@ -8,8 +8,19 @@ $red: (
   'darken2': #d31c4b,
 );
 
+$red2: (
+  'base': #eb171b,
+  'lighten1': #fc5b5e,
+  'lighten2': #ffd9d9,
+  'darken1': #cc0003
+);
+
 :export {
   @each $key, $value in $red {
     red-#{unquote($key)}: $value;
+  }
+
+  @each $key, $value in $red2 {
+    red2-#{unquote($key)}: $value;
   }
 }

@@ -8,8 +8,19 @@ $green: (
   'darken2': #0d5e58,
 );
 
+$green2: (
+  'base': #148918,
+  'lighten1': #45a848,
+  'lighten2': #bae59a,
+  'lighten3': #def9ce
+);
+
 :export {
   @each $key, $value in $green {
     green-#{unquote($key)}: $value;
+  }
+
+  @each $key, $value in $green2 {
+    green2-#{unquote($key)}: $value;
   }
 }

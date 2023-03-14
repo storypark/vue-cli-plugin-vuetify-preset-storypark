@@ -8,8 +8,22 @@ $teal: (
   'darken2': #075476
 );
 
+$teal2: (
+  'base': #0080a3,
+  'lighten1': #00a1c6,
+  'lighten2': #b8e4f2,
+  'lighten3': #d2f1fa,
+  'lighten4': #e8f9ff,
+  'darken1': #006d91,
+  'darken2': #075475
+);
+
 :export {
   @each $key, $value in $teal {
     teal-#{unquote($key)}: $value;
+  }
+
+  @each $key, $value in $teal2 {
+    teal2-#{unquote($key)}: $value;
   }
 }

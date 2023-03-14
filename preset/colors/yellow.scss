@@ -8,8 +8,17 @@ $yellow: (
   'darken2': #d39c29,
 );
 
+$yellow2: (
+  'base': #ffd55b,
+  'lighten1': #fff5b8
+);
+
 :export {
   @each $key, $value in $yellow {
     yellow-#{unquote($key)}: $value;
+  }
+
+  @each $key, $value in $yellow2 {
+    yellow2-#{unquote($key)}: $value;
   }
 }

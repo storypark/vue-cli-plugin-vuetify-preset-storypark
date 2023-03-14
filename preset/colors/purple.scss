@@ -8,8 +8,22 @@ $purple: (
   'darken2': #433D7C,
 );
 
+$purple2: (
+  'base': #756bc3,
+  'lighten1': #9288dd,
+  'lighten2': #b5adeb,
+  'lighten3': #dbd8f3,
+  'lighten4': #edebf9,
+  'darken1': #6259a6,
+  'darken2': #433d7c,
+);
+
 :export {
   @each $key, $value in $purple {
     purple-#{unquote($key)}: $value;
+  }
+
+  @each $key, $value in $purple2 {
+    purple2-#{unquote($key)}: $value;
   }
 }

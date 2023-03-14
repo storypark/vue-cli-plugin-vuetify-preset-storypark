@@ -12,8 +12,23 @@ $grey: (
   'darken5': #384450
 );
 
+$grey2: (
+  'base': #687381,
+  'lighten1': #8995a3,
+  'lighten2': #b7c2cb,
+  'lighten3': #cfd7de,
+  'lighten4': #e1e9ef,
+  'lighten5': #f7f9fc,
+  'darken1': #384450,
+  'darken2': #262d36
+);
+
 :export {
   @each $key, $value in $grey {
     grey-#{unquote($key)}: $value;
+  }
+
+  @each $key, $value in $grey2 {
+    grey2-#{unquote($key)}: $value;
   }
 }
