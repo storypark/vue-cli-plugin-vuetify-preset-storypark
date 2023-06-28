@@ -1,0 +1,6 @@
+.v-application {
+  .v-autocomplete .error--text {
+    caret-color: map-get($red2, "darken1") !important;
+    color: map-get($red2, "darken1") !important;
+  }
+}
