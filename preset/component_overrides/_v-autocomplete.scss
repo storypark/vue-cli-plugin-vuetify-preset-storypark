@@ -16,53 +16,55 @@
         background: map-get($teal2, 'lighten1')!important;
         color: map-get($teal2, 'lighten4')!important;
       }
-      .v-list-item {
-        min-height: 48px;
-        &--active {
-          background-color: map-get($teal2, 'lighten4') !important;
-          color: map-get($teal2, 'darken1') !important;
-
-          &::before { opacity: 0 !important; }
-        }
-        &--highlighted {
-          background-color: map-get($grey2, 'lighten4') !important;
-          color: map-get($grey2, 'darken2') !important;
-
-          &::before { opacity: 0 !important; }
-        }
-        &--link:hover {
-          background-color: map-get($grey2, 'lighten4') !important;
-          color: map-get($grey2, 'darken2') !important;
-
-          &::before { opacity: 0 !important; }
-        }
-        &--compact {
-          line-height: 0;
-        }
-      }
-      .v-list-item--active.v-list-item--highlighted {
-        background-color: map-get($teal2, 'lighten4') !important;
-        color: map-get($teal2, 'lighten4') !important;
-
-        &::before { opacity: 0 !important; }
-      }
-      .select-label { white-space: 'break-spaces'; }
-
-      .bottom-border {
-        &:after {
-          background-color: map-get($grey2, 'base');
-          bottom: -8px;
-          content: '';
-          height: 1px;
-          min-height: unset;
-          position: absolute;
-          width: 92%;
-        }
-      }
     }
+    .select-label { white-space: 'break-spaces'; }
     .error--text {
       caret-color: map-get($red2, 'darken1') !important;
       color: map-get($red2, 'darken1') !important;
+    }
+  }
+  .sp-dropdown--menu {
+    .v-list-item {
+      min-height: 48px;
+      &--active {
+        background-color: map-get($teal2, 'lighten4') !important;
+        color: map-get($teal2, 'darken1') !important;
+
+        &::before { opacity: 0 !important; }
+      }
+      &--highlighted {
+        background-color: map-get($grey2, 'lighten4') !important;
+        color: map-get($grey2, 'darken2') !important;
+
+        &::before { opacity: 0 !important; }
+      }
+      &--link:hover {
+        background-color: map-get($grey2, 'lighten4') !important;
+        color: map-get($grey2, 'darken2') !important;
+
+        &::before { opacity: 0 !important; }
+      }
+      &--compact {
+        line-height: 0;
+      }
+    }
+    .v-list-item--active.v-list-item--highlighted {
+      background-color: map-get($teal2, 'lighten4') !important;
+      color: map-get($teal2, 'lighten4') !important;
+
+      &::before { opacity: 0 !important; }
+    }
+
+    .bottom-border {
+      &:after {
+        background-color: map-get($grey2, 'base');
+        bottom: -8px;
+        content: '';
+        height: 1px;
+        min-height: unset;
+        position: absolute;
+        width: 92%;
+      }
     }
   }
 }
