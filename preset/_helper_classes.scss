@@ -61,6 +61,20 @@ $degrees: (
   }
 }
 
+@each $key, $value in $grey2 {
+  // border-color-grey2--lighten1
+  body .v-application .v-application--wrap .border-color-grey2--#{$key} {
+    border-color: $value !important;
+  }
+}
+
+@each $key, $value in $teal2 {
+  // border-color-teal2--lighten1
+  body .v-application .v-application--wrap .border-color-teal2--#{$key} {
+    border-color: $value !important;
+  }
+}
+
 @each $key, $value in $yellow {
   // border-color-yellow--lighten1
   body .v-application .border-color-yellow--#{$key},
@@ -71,6 +85,13 @@ $degrees: (
 
 .border {
   &- {
+    &color {
+      &-- {
+        // border-color--transparent
+        &transparent { border-color: transparent !important; }
+      }
+    }
+
     &style {
       &-- {
         // border-style--solid
@@ -86,6 +107,34 @@ $degrees: (
         &sm { border-width: 1px !important; }
         // border-width--med
         &med { border-width: 2px !important; }
+      }
+    }
+
+    &top {
+      &-- {
+        // border-top--none
+        &none { border-top: 0 !important; }
+      }
+    }
+
+    &bottom {
+      &-- {
+        // border-bottom--none
+        &none { border-bottom: 0 !important; }
+      }
+    }
+
+    &left {
+      &-- {
+        // border-left--none
+        &none { border-left: 0 !important; }
+      }
+    }
+
+    &right {
+      &-- {
+        // border-right--none
+        &none { border-right: 0 !important; }
       }
     }
   }
