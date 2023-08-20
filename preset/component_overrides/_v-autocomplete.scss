@@ -50,7 +50,7 @@
     }
     .v-list-item--active.v-list-item--highlighted {
       background-color: map-get($teal2, 'lighten4') !important;
-      color: map-get($teal2, 'lighten4') !important;
+      color: map-get($teal2, 'darken1') !important;
 
       &::before { opacity: 0 !important; }
     }
