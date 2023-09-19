@@ -6,35 +6,44 @@
 
     &.success,
     &.success--text,
-    &.green--text {
-      background-color: map-get($green, "lighten4") !important;
-      border-color: map-get($green, "lighten2") !important;
-      color: map-get($green, "darken1") !important;
-    }
-
     &.info,
     &.info--text,
-    &.primary--text,
-    &.teal--text {
-      background-color: map-get($teal, "lighten3") !important;
-      border-color: map-get($teal, "lighten1") !important;
-      color: map-get($teal, "darken1") !important;
-    }
-
     &.warning,
     &.warning--text,
-    &.yellow--text {
-      background-color: map-get($yellow2, "lighten1") !important;
-      border-color: map-get($yellow2, "base") !important;
-      color: map-get($grey2, "darken2") !important;
+    &.error,
+    &.error--text { color: map-get($grey2, "darken2") !important; }
+
+    &.success,
+    &.success--text {
+      background-color: map-get($green, "lighten4") !important;
+      border-color: map-get($green, "lighten2") !important;
     }
 
+    &.green--text { color: map-get($green, "darken1") !important; }
+
+    &.info,
+    &.info--text {
+      background-color: map-get($teal, "lighten3") !important;
+      border-color: map-get($teal, "lighten1") !important;
+    }
+
+    &.primary--text,
+    &.teal--text { color: map-get($teal, "darken1") !important; }
+
+    &.warning,
+    &.warning--text {
+      background-color: map-get($yellow2, "lighten1") !important;
+      border-color: map-get($yellow2, "base") !important;
+    }
+
+    &.yellow--text { color: map-get($yellow, "darken2") !important; }
+
     &.error,
-    &.error--text,
-    &.red--text {
+    &.error--text {
       background-color: map-get($red, "lighten4") !important;
       border-color: map-get($red, "lighten2") !important;
-      color: map-get($red, "darken1") !important;
     }
+
+    &.red--text { color: map-get($red, "darken1") !important; }
   }
 }
