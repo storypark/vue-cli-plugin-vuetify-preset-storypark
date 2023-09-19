@@ -24,8 +24,8 @@
     &.warning,
     &.warning--text,
     &.yellow--text {
-      background-color: map-get($yellow, "lighten4") !important;
-      border-color: map-get($yellow, "lighten1") !important;
+      background-color: map-get($yellow2, "lighten1") !important;
+      border-color: map-get($yellow2, "base") !important;
       color: map-get($yellow, "darken2") !important;
     }
 
