@@ -4,7 +4,6 @@ require('./overrides.scss');
 require('./spml.scss');
 
 const storyparkColors = require('./colors/index').default;
-const textColors = require('./colors/text.scss');
 
 const preset = {
   theme: {
@@ -15,7 +14,6 @@ const preset = {
         primary: storyparkColors.teal,
         error: storyparkColors.red,
         background: storyparkColors.grey.lighten4,
-        defaultFont: textColors.textPrimary,
       },
     },
   },
